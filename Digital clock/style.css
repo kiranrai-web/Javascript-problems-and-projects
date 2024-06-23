@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: "Inter", sans-serif;
+
+
+}
+
+.body{
+    width:100%;
+    height:100vh;
+    background: rgb(205,143,44);
+    background: radial-gradient(circle, rgba(205,143,44,1) 0%, rgba(197,67,31,1) 100%);
+}
+
+.bigContainer{
+    display:flex;
+    flex-direction: column;
+    height:500px;
+    width:1000px;
+    position:relative;
+    align-items: center;
+    justify-content: center;
+    padding:2px;
+    margin:auto;
+    top:40px;
+}
+
+.date{
+    width:850px;
+    height:100px;
+    background:rgba(255, 229, 59, 0.2);
+    border-radius: 10px;
+    display:flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.dateBox{
+    width:215px;
+    height:70px;
+    font-size: 40px;
+    font-weight: 250px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    color: #FFFFFF;
+    box-shadow: 8px 9px 22px 1px rgba(0, 0, 0, 0.2);
+    background-color:rgba(5, 5, 5, 0.9);
+    border-radius: 9px;
+}
+
+.container{
+    width:850px;
+    height:300px;
+    margin:auto;
+    display:flex;
+    top:150px;
+    align-items: center;
+    justify-content: space-around;
+    background:rgba(255, 229, 59, 0.2);
+    border-radius: 10px;
+}
+
+.box{
+    width:221px;
+    height:235px;
+    border-radius: 9px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color:rgba(5, 5, 5, 0.9);
+    box-shadow: 8px 9px 22px 1px rgba(0, 0, 0, 0.2);
+    color: #FFFFFF;
+    text-shadow: rgba(255, 255, 255, 1);
+    z-index: 100;
+    column-gap: 10px;
+}
+
+.box .time{
+    font-size: 90px;
+    font-weight: 400px;
+}

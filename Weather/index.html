@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="search">
+            <input type="text" placeholder="Search location" spellcheck="false">
+            <div class="searchImg">
+                <img src="images/search.png">
+            </div>
+        </div>
+        <div class="error">Invalid city name!</div>
+        <div class="card">
+            <div class="city">
+                <p></p>
+                <img src="images/location.png">
+            </div>
+            <div class="climate">
+                <div class="date"></div>
+                <div class="temp">
+                    <img class="ther" src="images/temperature.png">
+                    <p> </p>
+                    <img class="tempImg" src="">
+                </div>
+            </div>
+            <div class="climateInfo">
+                <div class="humidity extra">
+                    <p>HUMIDITY</p>
+                    <p class="useHumidity"></p>
+                </div>
+                <div class="visibility extra">
+                    <p>VISIBILITY</p>
+                    <p class="useVisibility"></p>
+                </div>
+                <div class="airPressure extra">
+                    <p>AIR PRESSURE</p>
+                    <p class="pressure"></p>
+                </div>
+                <div class="wind extra">
+                    <p>WIND</p>
+                    <p class="useWind"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

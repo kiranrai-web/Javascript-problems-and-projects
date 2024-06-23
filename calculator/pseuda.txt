@@ -1,0 +1,39 @@
+Variables:
+    currentInput = ""; // Store the current input
+    previousInput = ""; // Store the previous input
+    operation = ""; // Store the current operation (+, -, *, /)
+
+Function handleNumberClick(number):
+    Append the clicked number to the currentInput
+    Update the display with the currentInput
+
+Function handleOperationClick(op):
+    If currentInput is not empty:
+        If previousInput is not empty:
+            Perform the calculation based on the previousInput, currentInput, and operation
+            Update previousInput with the result
+            Update currentInput with the result
+            Clear operation
+        Else:
+            Set previousInput to currentInput
+            Clear currentInput
+    Set operation to the clicked operation
+
+Function handleEqualsClick():
+    If currentInput and previousInput are not empty:
+        Perform the calculation based on the previousInput, currentInput, and operation
+        Update previousInput with the result
+        Clear currentInput and operation
+        Update the display with the result
+
+Function handleClearClick():
+    Clear currentInput, previousInput, and operation
+    Update the display
+
+Function handleDeleteClick():
+    Remove the last character from currentInput
+    Update the display
+
+Attach click event listeners to number buttons, operation buttons, equals button, clear button, and delete button, calling the appropriate handle functions.
+
+Display initial state of the calculator (0 or empty).

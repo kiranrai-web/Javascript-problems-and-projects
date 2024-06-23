@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="containerLeft">
+            <h1>Password<br>Generator</h1>
+            <div class="displayPass">
+                <input type="text" id="password" placeholder="Password">
+                <img src="images/Icon.png">
+            </div>
+            <button class="copyPassword">Copy Password <span><img src="images/Icon(1).png"></span></button>
+            <div class="value"></div>
+            <input type="range" min="8" max="20" id="mySlider" class="slider">
+            <div class="selection">
+                <div class="select">
+                    <input type="checkbox" class="check" id="upperCase">
+                    UpperCase Letter
+                </div>
+                <div class="select">
+                    <input type="checkbox" class="check" id="lowerCase">
+                    LowerCase Letter
+                </div>
+                <div class="select">
+                    <input type="checkbox" class="check" id="symbol">
+                    Symbol
+                </div>
+                <div class="select">
+                    <input type="checkbox" class="check" id="number">
+                    Numbers
+                </div>
+            </div>
+            <button class="passGenerate">Generate Password <span><img src="images/Strengmeter.png"></span></button>
+        </div>
+        <div class="containerRight">
+            <h2>Password History</h2>
+            <ul class="history">
+                <!-- <li class="pass">Home <span><img src="images/copy.png"></span></li>
+                <li class="pass">Home <span><img src="images/copy.png"></span></li> -->
+            </ul>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

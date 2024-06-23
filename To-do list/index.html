@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do list</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="title">
+            <div class="titleName">
+                <div class="titleLine"></div>
+                <h1>TO-DO NOW</h1>
+                <div class="titleLine"></div>
+            </div>
+            <div class="titleEnd">
+                <div class="endLine"></div>
+                <img src="NotePencil.svg">
+                <div class="endLine"></div>
+            </div>
+        </div>
+        <div class="search">
+            <input type="text" placeholder="Enter Your Task" id="searchInput">
+            <button onclick="addTask()">Add task</button>
+        </div>
+
+        <div class="seperator">
+
+        </div>
+
+        <div class="taskList">
+            <ul id="toDoList">
+                <!-- <li>This is a task <span><img src="delet.png"></span></li>
+                <li>This is a task</li>
+                <li>This is a task</li> -->
+            </ul>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

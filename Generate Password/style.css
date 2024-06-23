@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: "Roboto", sans-serif;
+    box-sizing: border-box;
+}
+
+body{
+    background:#1E1E1E;
+}
+
+.container{
+    border:1px solid #00F0FF;
+    margin:60px auto 0;
+    width:1000px;
+    height:500px;
+    padding:50px;
+}
+
+.container h1{
+    color:#F8EF00;
+    font-size: 40px;
+    letter-spacing: 5px;
+    line-height: 36px;
+}
+
+.displayPass{
+    margin-top: 30px;
+    width:50%;
+    background: rgba(0, 240, 255, 0.1);
+    color:#00F0FF;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding:8px 20px;
+    stroke: #00F0FF;
+    border:2px solid #00F0FF;
+}
+
+.displayPass input{
+    border:0;
+    outline: 0;
+    font-size: 18px;
+    background: none;
+    width:90%;
+    color:#00F0FF;
+}
+
+.displayPass img{
+    cursor: pointer;
+}
+
+.copyPassword{
+    margin-top:20px;
+    padding:8px 35px;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 0;
+    outline: 0;
+    background: #F8EF00;
+    cursor: pointer;
+}
+
+.copyPassword img{
+    margin-left: 20px;
+}
+
+.selection{
+    margin-top:30px;
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    width:50%;
+    font-size: 18px;
+    row-gap: 15px;
+    color:#FAFAFA;
+}
+
+.value{
+    background-color: #FAFAFA;
+    height: 30px;
+    width:30px;
+    /* transform: rotate(-135deg); */
+    position: absolute;
+    margin: auto;
+    left:0;
+    right:50px;
+    top:330px;
+    color:#333;
+    padding:2px;
+    font-size: 18px;
+    border:1px solid #00F0FF;
+}
+
+
+.slider{
+    margin-top: 25px;
+    width:40%;
+    background: #00F0FF;
+    height: 2px;
+    cursor: pointer;
+}
+
+.passGenerate{
+    margin-top: 30px;
+    padding:15px 30px;
+    font-size: 16px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    background: #00F0FF;
+    border: 0;
+    outline: 0;
+}
+
+.passGenerate img{
+    padding-left: 20px;
+    cursor: pointer;
+}
+
+.containerRight{
+    border:2px solid #F8EF00;
+    height:400px;
+    width:30%;
+    position:absolute;
+    top:110px;
+    left:750px;
+    color:#FAFAFA;
+    padding:10px;
+    overflow: auto;
+}
+
+.containerRight ul{
+    margin-top:20px;
+}
+
+/* .containerRight ul li{
+    list-style: none;
+    font-size: 18px;
+    padding:5px;
+    color:#FAFAFA;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+} */
+
+.pass{
+    list-style: none;
+    font-size: 18px;
+    padding:5px;
+    color:#FAFAFA;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.pass img{
+    cursor: pointer;
+}
+
+
+  
