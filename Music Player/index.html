@@ -12,11 +12,12 @@
         <div class="containerBox boxLeft">
             <div class="heading">
                 <h1>Discover<br>New music</h1>
+                <img src="icons/cross.png" class="cross">
             </div>
             <div class="playlist">
                 <h4>Album List</h4>
                 <div class="albumlist">
-                    <div class="album">
+                    <!-- <div data-folder="ncs" class="album">
                         <img src="image.png">
                         <h6>Ok Computer</h6>
                         <p>Radiohead, 2001</p>
@@ -35,38 +36,41 @@
                         <img src="image.png">
                         <h6>Ok Computer</h6>
                         <p>Radiohead, 2001</p>
-                    </div>
+                    </div> -->
                 </div>
             </div>
         </div>
         <div class="containerBox boxCenter">
-            <div class="text"> Now Playing</div>
+            <div class="text"> Currently Not Playing <span class="dot"></span></div>
+            <img src="icons/up.svg" class="up">
+            <img src="icons/down.svg" class="down">
             <div class="songInfo">
-                <img src="image 20.png">
-                <h6>Money Machine</h6>
-                <p>1000 Gecks</p>
+                <img src="musicBg2.jpeg">
+                <h6 id="songTitle">24kGoldn Mood</h6>
+                <p>Unknown Artist</p>
             </div>
             <div class="songTime">
-                <input type="range" min="0" max="100" id="songDuration">
+                <p id="currentSong-time">0:00</p>
+                <input type="range" value="0" id="songDuration">
+                <p id="songFinish-time">0:00</p>
             </div>
             <div class="songCtrl">
-                <img src="./icons/Group 45.png">
-                <img src="./icons/Group.png">
-                <img src="./icons/play button.png">
-                <img src="./icons/Group(1).png">
-                <img src="./icons/Group 44.png">
+                <img src="./icons/Group.png" id="prevBtn">
+                <img src="./icons/play button.png" id="playPause">
+                <img src="./icons/Group(1).png" id="nxtBtn">
             </div>
             <div class="songSound contain-center">
                 <img src="./icons/sound.png">
-                <input type="range" min="0" max="100" id="songTime">
+                <input type="range" min="0" max="100" id="songSound">
                 <img src="./icons/sound1.png">
             </div>
         </div>
         <div class="containerBox boxRight">
             <h1>Track List</h1>
+            <img src="icons/hamburger.png" class="hamburger">
             <p>Playing next</p>
             <div class="songlist">
-                <div class="songName">
+                <!-- <div class="songName songCont">
                     <div class="songleft">
                         <img src="Vector.png">
                         <img src="image 13.png">
@@ -89,7 +93,7 @@
                         <h2>Ice Cave II</h2>
                     </div>
                     <p>3:13</p>
-                </div>
+                </div> -->
             </div>
         </div>
     </div>

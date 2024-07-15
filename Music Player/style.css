@@ -5,15 +5,20 @@
     margin: 0;
     font-family: "Poppins", sans-serif;
     box-sizing: border-box;
+    overflow: hidden;
+}
+
+input[type="range"]{
+    overflow: visible;
 }
 
 .container{
     width:100%;
     height:100%;
+    background: #ffe0e5;
 }
 
 .containerBox{
-    border:2px solid red;
     height:100vh;
 }
 
@@ -32,7 +37,6 @@
     margin-top: 20px;
     height:80vh;
     width:100%;
-    border:2px solid black;
 }
 
 .playlist h4{
@@ -43,7 +47,7 @@
 .boxLeft .albumlist{
     width:100%;
     margin-top:15px;
-    height:73vh;
+    row-gap: 20px;
     display: grid;
     grid-template-columns: 1fr 1fr;
     padding:10px;
@@ -51,13 +55,29 @@
 }
 
 .boxLeft .album{
-    width:135px;
+    width:140px;
     height:185px;
-    border:1px solid green;
     display:flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    /* padding: 5px; */
+    background: #f8e9ec;
+    border: 1px solid #828282;
+    cursor: pointer;
+    transition: .2s all;
+    text-align: center;
+}
+
+.album:hover{
+    background: #f7d0d7;
+}
+
+.album img{
+    width: 138px;
+    height:138px;
+    object-fit: cover;
+    object-position: center;
 }
 
 .album h6{
@@ -74,7 +94,9 @@
     width:40%;
     text-align: center;
     padding:10px;
-    background-color: #FAFAFA;
+    background-color: #fcd3dae8;
+    border-left: 1px solid rgba(0, 0, 0, 0.281);
+    border-right: 1px solid rgba(0, 0, 0, 0.281);
 }
 
 .boxCenter .text{
@@ -87,11 +109,11 @@
 .songInfo{
     width:100%;
     height:60vh;
-    margin-top:35px;
-    border:2px solid black;
+    margin-top:15px;
 }
 
 .songInfo h6{
+    margin-top: 10px;
     font-size: 18px;
     font-weight: 600;
     color: #333333;
@@ -102,20 +124,39 @@
     color: #4F4F4F;
 }
 
+.songTime{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    height: 40px;
+}
+
+.songTime p{
+    font-size: 14px;
+    color: #4F4F4F;
+}
+
 .songTime input{
-    width:80%;
-    margin-top:5px;
+    width:70%;
 }
 
 .songCtrl{
+    height: 100px;
+    width: 100%;
+    margin-top: 5px;
     display:flex;
     align-items: center;
     justify-content: center;
     gap:30px;
+    cursor: pointer;
 }
 
 .songSound{
     gap:30px;
+    margin-top: 8px;
+    height: 40px;
+    width: 100%;
 }
 
 .songSound input{
@@ -141,10 +182,10 @@
 
 .boxRight .songlist{
     margin-top: 15px;
-    border:2px solid red;
     width:100%;
     height:80vh;
     overflow: auto;
+    overflow-x: hidden;
 }
 
 .songName{
@@ -152,9 +193,24 @@
     display:flex;
     align-items: center;
     justify-content: space-between;
-    border:2px solid red;
     margin-bottom: 10px;
-    background: #d8d6d6;
+    background: #fae4e8ec;
+    cursor: pointer;
+    transition: .3s all ease-out;
+}
+
+.songName:hover{
+    background: #fcbdc8;
+    scale: 1.02;
+}
+
+.songName h2{
+    font-size: 14px;
+    color:#585656;
+}
+
+.songName.playing h2{
+    color: rgba(226, 78, 78, 0.884);
 }
 
 .songleft{
@@ -164,8 +220,8 @@
 }
 
 .songleft h2{
-    font-size: 18px;
-    color:#333333;
+    font-size: 14px;
+    color:#585656;
 }
 
 .songName p{
@@ -174,3 +230,192 @@
     margin-top: -3px;
 }
 
+#songDuration{
+    appearance: none;
+    -webkit-appearance: none;
+    width: 80%;
+    height: 5px;
+    background: rgba(0, 0, 0, 0.25);
+    border-radius: 4px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+}
+
+
+#songDuration::-webkit-slider-thumb {
+    appearance: none;
+    background: #27AE60;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    box-shadow: 0 5px 5px rgba(67, 192, 9, 0.22);
+}
+
+#songDuration::-moz-range-thumb {
+    background: #27AE60;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    border: 5px solid #fff;
+    box-shadow: 0 5px 5px rgba(255, 26, 26, 0.22);
+}
+
+#songSound{
+    appearance: none;
+    -webkit-appearance: none;
+    width: 50%;
+    height: 4px;
+    background: rgba(0, 0, 0, 0.25);
+    border-radius: 4px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+}
+
+#songSound::-webkit-slider-thumb {
+    appearance: none;
+    background: #27AE60;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    box-shadow: 0 5px 5px rgba(67, 192, 9, 0.22);
+}
+
+#songSound::-moz-range-thumb {
+    background: #27AE60;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    border: 3px solid #fff;
+    box-shadow: 0 5px 5px rgba(255, 26, 26, 0.22);
+}
+
+.hamburger{
+    display:none;
+}
+
+.cross{
+    display:none;
+}
+
+.up{
+    display:none;
+}
+
+.down{
+    display:none;
+}
+
+@media (max-width: 1150px) {
+    .boxLeft{
+        left: -120%;
+        position: absolute;
+        transition: all .3s;
+        width: 450px;
+        height: 100vh;
+        z-index: 1;
+        background: #e78c9b;
+    }
+
+    .boxLeft .cross{
+        position: absolute;
+        top: 20px;
+        right: 40px;
+        display:block;
+        width: 32px;
+        height:32px;
+    }
+
+    .boxLeft .albumlist {
+        width: 100%;
+        margin-top: 15px;
+        height: 50vh;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        padding: 10px;
+        overflow: auto;
+      }
+
+    .boxCenter{
+        position: absolute;
+        width: 100%;
+        height: 200px;
+        bottom: 20px;
+        z-index: 1;
+    }
+
+    .up{
+        display: block;
+        position: absolute;
+        top: 20px;
+        right: 15px;
+        height: 32px;
+        width: 32px
+    }
+
+    .down{
+        display: none;
+        position: absolute;
+        top: 50px;
+        right: 20px;
+        height: 32px;
+        width: 32px
+    }
+
+    .boxCenter .text{
+        display:none;
+        margin-top: 70px;
+    }
+
+    .boxCenter .songInfo img{
+        display: none;
+        margin: 70px auto 45px;
+    }
+
+    .boxCenter .songInfo p{
+        display:none;
+    }
+
+    .boxCenter .songInfo h6{
+        margin-top: -1px;
+    }
+
+    .boxCenter .songSound{
+        display: none;
+        margin: auto;
+    }
+
+    .boxCenter .songCtrl{
+        margin-top: -120px;
+    }
+
+    #playPause{
+        height: 50px;
+        width: 50px;
+    }
+
+    .songTime{
+        margin-top: -450px;
+    }
+
+    #songDuration{
+        width: 70%;
+    }
+
+
+    .boxRight{
+        width: 100%;
+        height: 100vh;
+
+    }
+
+    .hamburger{
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        display:block;
+        width: 32px;
+        height:32px;
+    }
+}
