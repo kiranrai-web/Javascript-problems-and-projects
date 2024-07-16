@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Story Teller</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="containerBox">
+            <div class="containerTop">
+                <h2>Random <span>Story</span><br>Teller</h2>
+                <button class="generateStory">Generate Story</button>
+            </div>
+            <div class="containerMiddle">
+                <div class="storyInfo">
+                    <div class="title"> Story Title</div>
+                    <div class="author">Author Name</div>
+                </div>
+                <textarea id="story" placeholder="Generated Story will appear here..."></textarea>
+            </div>
+            <div class="containerBottom">
+                <select id="voiceSelect">English</select>
+                <button class="play"><img class="img" src="play.png"><p class="btnTxt">Listen</p></button>                
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
