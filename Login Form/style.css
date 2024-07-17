@@ -1,0 +1,256 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Lato", sans-serif;
+}
+
+.container{
+    min-height: 100vh;
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: whitesmoke;
+}
+
+.container-box{
+    height: 500px;
+    width: 900px;
+    border: 2px solid red;
+    display: flex;
+    align-items: center;
+    border-radius: 40px;
+    background: beige;
+    box-shadow: 5px 5px 1px #0000006b;
+}
+
+.left{
+    width: 100%;
+    height: 100%;
+}
+
+.left h1{
+    font-size: 52px;
+    font-weight: 800;
+    margin: 50px 0 0 0;
+    text-align: center;
+    color: rgba(194, 6, 6, 0.89);
+}
+
+#signUp-form{
+    margin: 0 20px;
+    padding: 10px;
+    gap: 20px;
+    position: relative;
+    width: 90%;
+}
+
+.input-group{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin: 45px 0;
+    position: relative;
+}
+
+#signUp-form label{
+    font-size: 22px;
+    flex-basis: 30%;
+}
+
+#signUp-form input{
+    flex-basis: 70%;
+    border: 0;
+    outline: 0;
+    background: transparent;
+    border-bottom: 1px solid black;
+    font-size: 16px;
+}
+
+::placeholder{
+    font-size: 16px;
+}
+
+#signUp-form button{
+    padding: 15px 40px;
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: 20px;
+    outline: 0;
+    border: 0;
+    border: 1px solid whitesmoke;
+    background: rgba(194, 6, 6, 0.89);
+    text-align: center;
+    margin: 10px auto;
+    display: block;
+    cursor: pointer;
+    transition: all ease-out .4s;
+    color: whitesmoke;
+}
+
+
+#signUp-form button:hover{
+    background: transparent;
+    color: #000;
+    border: 1px solid #000;
+}   
+
+.right{
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    text-align: center;
+    background: rgba(194, 6, 6, 0.89);
+    border-radius: 35px;
+    color: whitesmoke;
+    position: relative;
+}
+
+.anime-left{
+    animation: slide-left 0.25s linear 0s 1 normal forwards;
+}
+
+@keyframes slide-left{
+    0% {
+        transform: translateX(0);
+        /* opacity: 1; */
+    }
+    100% {
+        transform: translateX(-100%);
+        /* opacity: 0; */
+        visibility: hidden;
+    }
+}
+
+.right h1{
+    font-size: 36px;
+    font-weight: 800;
+    margin: 105px 0 30px 0;
+    /* color: rgba(194, 6, 6, 0.89); */
+}
+
+.right p{
+    width: 80%;
+    font-size: 18px;
+    font-weight: 600;
+    display: block;
+    margin: 10px auto;
+}
+
+.right .click-here{
+    padding: 15px 30px;
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: 20px;
+    outline: 0;
+    border: 0;
+    border: 1px solid black;
+    background: whitesmoke;
+    text-align: center;
+    margin: 30px auto;
+    display: block;
+    cursor: pointer;
+    transition: all ease-out .4s;
+}
+
+.right .click-here:hover{
+    background: rgba(194, 6, 6, 0.89);
+    color: whitesmoke;
+    border: 1px solid whitesmoke;
+}
+
+.container-box2{
+    position: absolute;
+    height: 500px;
+    width: 900px;
+    border: 2px solid red;
+    display: flex;
+    align-items: center;
+    border-radius: 40px;
+    background: beige;
+    box-shadow: 5px 5px 1px #0000006b;
+    visibility: hidden;
+    transition: all linear;
+}
+
+.container-box2 .right h1{
+    font-size: 52px;
+    font-weight: 800;
+    margin-top: 60px;
+    color: rgba(194, 6, 6, 0.89);
+}
+
+.container-box2 .right #signUp-form{
+    margin-top: -25px;
+    color: #000;
+}
+
+.container-box2 .right{
+    background: transparent;
+    border-radius: 0;
+}
+
+.container-box2 .left{
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    text-align: center;
+    background: rgba(194, 6, 6, 0.89);
+    border-radius: 35px;
+    color: whitesmoke;
+}
+
+.anime-right{
+    animation: slide-right 0.25s linear 0s 1 normal forwards;
+}
+
+@keyframes slide-right{
+    0%{
+        transform: translateX(0);
+    }
+    100%{
+        transform: translateX(100%);
+        visibility: hidden;
+    }
+}
+
+.container-box2 .left h1{
+    font-size: 36px;
+    font-weight: 800;
+    margin: 105px 0 30px 0;
+    color: whitesmoke;
+}
+
+.container-box2 .left p{
+    width: 80%;
+    font-size: 18px;
+    font-weight: 600;
+    display: block;
+    margin: 10px auto;
+}
+
+.container-box2 .left #register{
+    padding: 15px 30px;
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: 20px;
+    outline: 0;
+    border: 0;
+    border: 1px solid black;
+    background: whitesmoke;
+    text-align: center;
+    margin: 30px auto;
+    display: block;
+    cursor: pointer;
+    transition: all ease-out .4s;
+}
+ 
+.container-box2 .left #register:hover{
+    background: rgba(194, 6, 6, 0.89);
+    color: whitesmoke;
+    border: 1px solid whitesmoke;
+}
