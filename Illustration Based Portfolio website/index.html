@@ -197,10 +197,10 @@
             <div class="get-touch-container">
                 <div class="get-touch-left">
                     <form>
-                        <input type="text" placeholder="Your name" id="input-name">
-                        <input type="email" placeholder="Email" id="input-email">
-                        <input type="text" placeholder="Your website (if exists)" id="input-webisite">
-                        <textarea placeholder="How can i help you?" id="input-text" rows="5"></textarea>
+                        <input type="text" placeholder="Your name" id="input-name" onblur="validateName()"><span>Invalid Name*</span>
+                        <input type="email" placeholder="Email" id="input-email" onblur="validateEmail()"><span>Invalid Email*</span>
+                        <input type="text" placeholder="Your website (if exists)" id="input-website" onblur="validateWebsite()"><span>It is required*</span>
+                        <textarea placeholder="How can i help you?" id="input-text" rows="5"></textarea><span>Please fill something!</span>
                     </form>
                     <div class="form-icon">
                         <button class="form-btn">Get In Touch</button>

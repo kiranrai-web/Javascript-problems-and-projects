@@ -595,9 +595,41 @@ header{
     padding: 25px 15px;
 }
 
+
+
 .get-touch-left input, textarea::placeholder{
     font-size: 16px;
     color:#71717A;
+}
+
+.get-touch-left input:hover{
+    background:#F4F4F5;
+}
+
+.get-touch-left input:focus{
+    box-shadow: 1px 0px 5px #000;
+}
+
+.get-touch-left textarea:hover{
+    background:#F4F4F5;
+}
+
+.get-touch-left textarea:focus{
+    box-shadow: 1px 0px 5px #000;
+}
+
+.get-touch-left form{
+    position: relative;
+}
+
+.get-touch-left form span{
+    color: red;
+    font-size: 12px;
+    font-weight: 500;
+    position: absolute;
+    right: 55px;
+    margin-top: 36px;
+    display: none;
 }
 
 .form-icon{
