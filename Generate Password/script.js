@@ -4,6 +4,7 @@ const passCopy = document.querySelector(".copyPassword");
 const history = document.querySelector(".history")
 const slider = document.getElementById("mySlider");
 const sliderValue = document.querySelector(".value");
+const refresh = document.querySelector(".displayPass img");
 
 const upperCase = "QWERTYUIOPLKJHGFDSAZXCVBNM";
 const lowerCase = "qwertyuioplkjhgfdsazxcvbnm";
@@ -49,6 +50,10 @@ const generatePassword =()=>{
     currentPassword = password
     passwordDisplay.value = password
 }
+
+refresh.addEventListener("click",()=>{
+    generatePassword();
+})
 
 
 const copyPassword =()=>{

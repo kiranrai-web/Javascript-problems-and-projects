@@ -79,6 +79,12 @@ body{
     color:#FAFAFA;
 }
 
+.slider-input-value{
+    position: relative;
+    width: 70%;
+    height: auto;
+}
+
 .value{
     background-color: #FAFAFA;
     height: 30px;
@@ -86,9 +92,8 @@ body{
     /* transform: rotate(-135deg); */
     position: absolute;
     margin: auto;
-    left:0;
-    right:50px;
-    top:330px;
+    right:40%;
+    bottom: -5px;
     color:#333;
     padding:2px;
     font-size: 18px;
@@ -162,4 +167,33 @@ body{
 }
 
 
-  
+@media (max-width: 1300px){
+    .container{
+        display: flex;
+        width: auto;
+        height: 100vh;
+        margin: auto;
+        padding: 20px;
+        flex-direction: column;
+    }
+
+    .containerLeft{
+        width: 100%;
+    }
+
+    .containerRight{
+        position: static;
+        margin-top: 25px;
+        width: 80%;
+    }
+}
+
+@media (max-width: 600px){
+    .displayPass{
+        width: 100%;
+    }
+
+    .selection{
+        width: 100%;
+    }
+}

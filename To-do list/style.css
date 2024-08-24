@@ -78,8 +78,8 @@
 }
 
 button{
-    height:45px;
-    width:150px;
+    height:46px;
+    width:160px;
     border-radius: 20px;
     border: none;
     outline: none;
@@ -126,5 +126,64 @@ ul li span img{
     width:36px;
     margin-top:20px;
     cursor: pointer;
+}
+
+@media (max-width:900px){
+    .title{
+        height: 100px;
+    }
+
+    .titleline{
+        width: 30px;
+    }
+
+    .titleName h1{
+        font-size: 36px;
+    }
+
+    .endLine{
+        width: 200px;
+    }
+
+    .search{
+        width: 70%;
+    }
+
+    .search input{
+        width: 70%;
+    }
+
+    button{
+        width: 120px;
+        font-size: 16px;
+    }
+
+    .seperator{
+        width: 90%;
+    }
+
+    .taskList{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #toDoList{
+        width: 80%;
+    }
+
+    ul li{
+        height: auto;
+        width: 90%;
+        font-size: 16px;
+        flex-basis: 100%;
+        border: 2px solid blue;
+    }
+
+    ul li span img{
+        height: 24px;
+        width: 24px;
+    }
 }
 

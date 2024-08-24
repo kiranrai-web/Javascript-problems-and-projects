@@ -76,3 +76,33 @@ body {
     font-size: 36px;
     color:#DE55DE;
 }
+
+@media (max-width: 1200px){
+    .container{
+        display: flex;
+        height: auto;
+        width: auto;
+        position: static;
+        flex-direction: column;
+        margin: 80px 20px;
+    }
+
+    .container h1{
+        font-size: 46px;
+    }
+
+    .age{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 50px;
+        margin-left: 0;
+        gap: 30px;
+        height: auto;
+        width: auto;
+    }
+
+    .age input{
+        padding: 10px 60px;
+    }
+}

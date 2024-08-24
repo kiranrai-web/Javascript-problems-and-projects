@@ -148,4 +148,78 @@ body{
     margin-bottom: 80px;
 }
 
+@media (max-width: 900px){
+    .container{
+        height: auto;
+        width: 100%;
+    }
+
+    .search{
+        width: 80%;
+    }
+
+    .searchImg{
+        height: 40px;
+        width: 40px;
+    }
+
+    .search input{
+        width: 60%;
+        padding-left: 30px;
+    }
+
+    .searchImg img{
+        height: 24px;
+        width: 24px;
+    }
+
+    .card{
+        margin-top: 30px;
+        width: 90%;
+        height: auto;
+    }
+
+    .city{
+        width: 100%;
+        height: auto;
+        justify-content: center;
+    }
+
+    .climate{
+        width: 90%;
+        height: auto;
+        margin: 30px 0;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media (max-width: 690px){
+    .temp{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .tempImg{
+        order: 1;
+    }
+
+    .ther{
+        order:2;
+    }
+
+    .temp p{
+        order: 3;
+    }
+
+    .climateInfo{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+        text-align: center;
+    }
+}
+
 

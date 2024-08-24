@@ -43,3 +43,21 @@
     border-radius: 10px;
     cursor: pointer;
 }
+
+@media (max-width: 600px){
+    .buttonBox{
+        flex-direction: column;
+    }
+
+    .increase{
+        order: 1;
+    }
+
+    .decrease{
+        order: 3;
+    }
+
+    .reset{
+        order: 2;
+    }
+}

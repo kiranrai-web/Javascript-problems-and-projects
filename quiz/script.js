@@ -7,7 +7,7 @@ const questions = [
             {text: "Jiraiya", correct:false},
             {text: "Minato Namikaze", correct:false},
         ],
-        image: "/images/question1.jpg"
+        image: "./images/question1.jpg"
     },
     {
         question: "What is the name of Naruto Uzumaki's ultimate jutsu?",
@@ -17,7 +17,7 @@ const questions = [
             {text: "Rasenshuriken", correct:false},
             {text: "Chidori", correct:false},
         ],
-        image: "/images/question2.jpg"
+        image: "./images/question2.jpg"
     },
     {
         question: "Which of these characters is known for their ability to control sand in battles?",
@@ -27,7 +27,7 @@ const questions = [
             {text: "Neji Hyuga", correct:false},
             {text: "Gaara", correct:true},
         ],
-        image: "/images/question3.jpg"
+        image: "./images/question3.jpg"
     },
     {
         question: "What is the name of the Nine-Tailed Fox sealed within Naruto Uzumaki?",
@@ -37,7 +37,7 @@ const questions = [
             {text: "Matatabi", correct:false},
             {text: "Isobu", correct:false},
         ],
-        image: "/images/question4.jpg"
+        image: "./images/question4.jpg"
     },
     {
         question: "Which ninja village does Sasuke Uchiha initially belong to?",
@@ -47,7 +47,7 @@ const questions = [
             {text: "Hidden Leaf Village", correct:true},
             {text: "Hidden Cloud Village", correct:false},
         ],
-        image: "/images/question5.jpg"
+        image: "./images/question5.jpg"
     },
     {
         question: "What is the name of the sword wielded by Zabuza Momochi?",
@@ -57,7 +57,7 @@ const questions = [
             {text: "Samehada", correct:false},
             {text: "Nuibari", correct:false},
         ],
-        image: "/images/question6.jpg"
+        image: "./images/question6.jpg"
     },
     {
         question: "Who is Naruto's father and the Fourth Hokage of the Hidden Leaf Village?",
@@ -67,7 +67,7 @@ const questions = [
             {text: "Kakashi Hatake", correct:false},
             {text: "Hiruzen Sarutobi", correct:false},
         ],
-        image: "/images/question7.jpg"
+        image: "./images/question7.jpg"
     },
     {
         question: "Who is the leader of the Akatsuki organization in Naruto?",
@@ -77,7 +77,7 @@ const questions = [
             {text: "Kisame Hoshigaki", correct:false},
             {text: "Nagato", correct:true},
         ],
-        image: "/images/question8.jpg"
+        image: "./images/question8.jpg"
     },
     {
         question: "What clan does Itachi Uchiha belong to?",
@@ -87,7 +87,7 @@ const questions = [
             {text: "Hyuga Clan", correct:false},
             {text: "Senju Clan", correct:false},
         ],
-        image: "/images/question9.jpg"
+        image: "./images/question9.jpg"
     },
     {
         question: "Who is Naruto's main rival throughout the series?",
@@ -97,7 +97,7 @@ const questions = [
             {text: "Sasuke Uchiha", correct:true},
             {text: "Rock Lee", correct:false},
         ],
-        image: "/images/question10.jpg"
+        image: "./images/question10.jpg"
     },
 ];
 

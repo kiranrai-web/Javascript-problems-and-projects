@@ -8,7 +8,7 @@
 }
 
 .container{
-    height: 100vh;
+    min-height: 100vh;
     width: 100%;
     background-image: linear-gradient(to right top, 
     #051937, #004d7a, #008793, #00bf72, #a8eb12);
@@ -90,7 +90,7 @@
 .storyInfo .author{
     width: 300px;
 }
-
+/* 
 .containerMiddle textarea{
     width: 100%;
     height: 85%;
@@ -101,6 +101,35 @@
     border: 0;
     background: transparent;
     color: #fff;
+} */
+
+.storyText {
+    border: 0;
+    padding: 10px;
+    height: 85%;
+    width: 100%;
+    overflow-y: auto;
+    /* overflow-x: none; */
+    background: transparent;
+    white-space: pre-wrap; /* Preserve whitespace and line breaks */
+    color: #fff;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.storyText span{
+    color: #fff;
+}
+
+.storyText placeholder{
+    color: #fff;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.highlight{
+    background-color: yellow;
+    color: red;
 }
 
 .containerBottom{
@@ -137,13 +166,13 @@
 }
 
 select{
-    flex: 0.3;
+    flex: 0.2;
     color: #000;
     background: #fff;
     height: 50px;
     outline: 0;
     border: 0;
-    padding: 0 20px;
+    padding: 0 5px;
     border-radius: 20px;
     appearance: none;
     background-image: url(down.png);

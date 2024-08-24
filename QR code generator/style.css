@@ -87,3 +87,48 @@ button:hover{
         transform: translateX(0);
     }
 }
+
+@media (max-width:800px){
+    body{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .container{
+        height: 80%;
+        width: 80%;
+        position: static;
+    }
+}
+
+@media (max-width: 550px){
+    .container{
+        flex-direction: column;
+        padding: 10px;
+        height: auto;
+        margin: 10px auto;
+        position: static;
+        text-align: center;
+    }
+
+    .container .qrInput{
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+        background: transparent;
+        outline: 0;
+        border: 0;
+    }
+
+    .qrInput input{
+        background: white;
+    }
+
+    #qrBtn{
+        width: 100%;
+        border-radius: 10px;
+        margin: 10px;
+        position: static;
+    }
+}

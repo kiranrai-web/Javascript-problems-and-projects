@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+       <div class="container-box">
+        <h1>Sign In</h1>
+        <div class="box">
+            <form action="/getLogin" method="POST">
+                <div class="username-box input-box">
+                    <input type="email" name="email" placeholder="Username" class="user-input">
+                </div>
+                <div class="password-box input-box">
+                    <input type="password" name="password" placeholder="Password" class="pass-input">
+                    <img src="images/eye-close.png" class="eye-icon">
+                </div>
+                <button type="submit">Login</button>
+            </form>
+            <div class="forget">
+                <div>
+                    Forget Password
+                </div>
+                <div>
+                    <u>Sign Up</u>
+                </div>
+            </div>
+        </div>
+       </div>
+    </div>
+    <script src="script.js">
+
+    </script>
+</body>
+</html>

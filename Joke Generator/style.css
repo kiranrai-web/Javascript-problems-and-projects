@@ -81,3 +81,39 @@ body{
     align-items: center;
     justify-content: center;
 }
+
+@media (max-width: 1200px){
+    body{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .container{
+        position: static;
+    }
+}
+
+@media (max-width: 850px){
+
+    .container{
+        height: 60%;
+        width: 80%;
+    }
+
+    .container h1{
+        font-size: 40px;
+        font-weight: 600;
+    }
+
+    .container p{
+        font-size: 28px;
+        padding: 0 5px;
+    }
+
+    .box{
+        height: 20%;
+        width: auto;
+        font-size: 22px;
+    }
+}

@@ -1,0 +1,258 @@
+*{
+    color: #fff;
+}
+
+
+.about-banner-left{
+    width: 45%;
+}
+
+.about-banner-right{
+    width: 55%;
+}
+
+.get-more-btn button img{
+    padding-left: 10px;
+}
+
+.sub-heading{
+    width: 80%;
+}
+
+.paragraph{
+    width: 85%;
+}
+
+.about-banner-right-box{
+    background: #333333;
+    height: 60px;
+    width: 150px;
+    left: 0;
+    bottom: 0;
+}
+
+.about-banner-right-bg{
+    height: 100%;
+    width: 100%;
+}
+
+.about-banner-right-bg-box{
+    width: 100%;
+    display: flex;
+    overflow-x: auto;
+}
+
+.about-banner-right-bg-box div{
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto;
+    flex: none;
+}
+
+.about-banner-right-bg img{
+    width: 100%;
+    height: 650px;
+    object-position: center;
+    object-fit: cover;
+}
+
+.about-banner-right-bg-box{
+    scrollbar-width: none; /* For Firefox */
+    -ms-overflow-style: none; /* For Internet Explorer 10+ */
+}
+
+.about-banner-right-bg-box::-webkit-scrollbar {
+    display: none; /* For WebKit-based browsers like Chrome and Safari */
+}
+
+
+.about-banner-right-box img{
+    margin: 0 20px;
+}
+
+.about-banner-right-box-info span{
+    margin: 0 5px;
+}
+
+.work-with-us-container{
+    gap: 40px;
+    padding: 30px 0;
+    margin-bottom: 40px;
+}
+
+.work-with-us-box{
+    background: #1C140F;
+    border-radius: 20px;
+    width: 30%;
+    padding: 30px;
+    margin-top: 30px;
+    cursor: pointer;
+    transition: 0.4s all ease-out;
+}
+
+.work-with-us-box:hover{
+    transform: translateY(20px);
+    background: var(--primary-btn);
+}
+
+.work-with-us-box:hover .work-with-us-title-box{
+    background: var(--secondary-bg);
+}
+
+.work-with-us-title-box{
+    background: rgba(176, 0, 220, 0.11);
+    border-radius: 8px;
+    padding: 10px 20px;
+    width: 40%;
+}
+
+.title-box-2{
+    background: rgba(220, 66, 0, 0.11);
+}
+
+.title-box-3{
+    background: rgba(0, 220, 141, 0.11);
+}
+
+.work-with-us-box p{
+    width: 90%;
+}
+
+.about-about-container{
+    background: var(--secondary-bg);
+    padding: 0 30px;
+    padding-top: 50px;
+    display: flex;
+    /* margin-bottom: 20px;  */
+}
+
+.about-about-box-left{
+    width: 50%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.about-img-box img{
+    height: 400px;
+    width: 400px;
+}   
+
+
+.about-about-box-right{
+    width: 50%;
+    padding-left: 10px;
+    padding-bottom: 20px;
+}
+
+.about-about-box-right h2{
+    margin-top: 20px;
+    width: 70%;
+}
+
+.about-about-box-right p{
+    width: 70%;
+}
+
+.our-team{
+    padding: 30px 40px;
+    /* background: linear-gradient(
+        to bottom, 
+        #3B2A9F 43%, 
+        #2F45B6 84%, 
+        #728AB9 100%
+      ); */
+    background: #728AB9;
+    /* background: #2F45B6; */
+}
+
+.our-team-top{
+    gap: 50px;
+    margin-top: 30px;
+}
+
+.our-team-box{
+    background: var(--secondary-bg);
+    width: 25%;
+    width: 280px;
+    height: 250px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+.our-team-box h5{
+    font-weight: 500;
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+@media (max-width: 800px){
+    .about-banner{
+        flex-direction: column;
+    }
+
+    .about-banner-left{
+        order: 2;
+    }
+
+    .about-banner-right{
+        order: 1;
+    }
+
+    .about-banner-right{
+        width: 100%;
+        border: 2px solid red;
+    }
+
+    .about-banner-left{
+        margin-top: 20px;
+        width: 100%;
+    }
+
+    .about-banner-right-box{
+        height: 45px;
+        width: 150px;
+    }
+}
+
+@media (max-width: 900px){
+    .work-with-us-container{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .work-with-us-box{
+        width: 80%;
+    }
+
+    .about-about-container{
+        flex-direction: column;
+        padding-bottom: 30px;
+    }
+
+    .about-about-box-left{
+        width: 100%;
+    }
+
+    .about-about-box-right{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .our-team-top{
+        flex-direction: column;
+    }
+
+    .our-team-box{
+        width: 80%;
+    }
+}
