@@ -14,7 +14,7 @@ let isPlaying = false;
 
 async function getSongs() {
     try {
-        let response = await fetch('/songs/');;
+        let response = await fetch('./songs/');
         let htmlString = await response.text();
 
         let div = document.createElement("div");

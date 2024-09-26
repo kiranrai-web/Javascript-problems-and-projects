@@ -9,14 +9,14 @@ class specialHeader extends HTMLElement {
             <div class="nav-right flex">
                 <div class="nav-right-menu">
                     <ul class="flex">
-                        <li><a href="/index.html">Home</a></li>
-                        <li><a href="/about.html">About Us</a></li>
-                        <li><a href="/portfolio.html">Portfolio</a></li>
-                        <li><a href="/news.html">News</a></li>
+                        <li><a href="./index.html">Home</a></li>
+                        <li><a href="./about.html">About Us</a></li>
+                        <li><a href="./portfolio.html">Portfolio</a></li>
+                        <li><a href="./news.html">News</a></li>
                     </ul>
                 </div>
                 <div class="nav-right-btn">
-                   <a href="/contact.html"> <button class="contact-us-btn pointer">Contact Us</button></a>
+                   <a href="./contact.html"> <button class="contact-us-btn pointer">Contact Us</button></a>
                 </div>
             </div>
             <div class="hamburger pointer">
