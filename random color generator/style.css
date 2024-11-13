@@ -1,0 +1,150 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.container{
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    z-index: -100;
+    /* pointer-events: none; */
+}
+
+.box1{
+    width: 30%;
+    height: 50px;
+    margin: 50px auto;
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    z-index: 100;
+}
+
+.actBtn{
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    z-index: -10;
+    background: yellowgreen;
+}
+
+.actBtnLeft{
+    animation: moveLeft .4s forwards;
+}
+
+.actBtnRight{
+    animation: moveRight .4s forwards;
+}
+
+@keyframes moveRight{
+    from{
+        left: 50%;
+    }
+    to{
+        left: 0;
+    }
+}
+
+@keyframes moveLeft{
+    from{
+        left: 0;
+    }
+    to{
+        left: 50%;
+    }
+}
+
+.button button{
+    height: 100%;
+    width: 100%;
+    cursor: pointer;
+    outline: 0;
+    border: 0;
+    font-size: 15px;
+    font-weight: 500;
+    background: transparent;
+    /* pointer-events: visible; */
+}
+
+.btn1{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn2{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.box2{
+    margin-top: 100px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.box2 button{
+    margin: 20px auto;
+    padding: 20px 40px;
+    /* font-size: 15px; */
+    /* font-weight: 550; */
+    border: 1px solid black;
+    border-radius: 8px;
+    outline: 0;
+    position: relative;
+    cursor: pointer;
+    background-color: yellowgreen;
+    overflow: hidden;
+}
+
+.box2 button span{
+    z-index: 1;
+    font-size: 15px;
+    font-size: 550;
+    position: relative;
+}
+
+.box2 button:hover span{
+    opacity: 100;
+}
+
+.box2 button::before{
+    position: absolute;
+    content: '';
+    height: 100%;
+    left: 0;
+    top: 0;
+    width: 0;
+    background: yellow;
+    z-index: 1;
+    border-radius: 8px;
+    transition: all .3s ease-out;
+}
+
+.box2 button:hover::before{
+    width: 100%;
+}
+
+.box2 h1{
+    font-size: 24px;
+    font-weight: 600;
+    margin: 40px auto;
+}
