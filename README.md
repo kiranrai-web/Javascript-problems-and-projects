@@ -18,4 +18,4 @@ To view and run the projects locally, follow these steps:
 
 1. Clone the repository to your local machine:
    ```bash
-git@github.com:kiranrai-web/Javascript-problems-and-projects.git
+git clone git@github.com:kiranrai-web/Javascript-problems-and-projects.git
