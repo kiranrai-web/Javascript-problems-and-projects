@@ -12,11 +12,10 @@ Some of the key skills I've learned and practiced throughout this journey includ
 - Exploring different ways to create and control media elements (like audio and video).
 - Working with basic **logic** and **algorithms** to create functional tools like a calculator.
 
-## Projects
-### 1. **Calculator**
+## Getting Started
 
-### 1. **Calculator**
+To view and run the projects locally, follow these steps:
 
-### 1. **Calculator**
-
-### 1. **Calculator**
+1. Clone the repository to your local machine:
+   ```bash
+   git clone https://github.com/yourusername/your-repository-name.git
