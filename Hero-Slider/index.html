@@ -3,44 +3,149 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gallery Slider</title>
+    <title>CineStream - Movie Streaming</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <div class="container">
-        <img class="left-btn" src="images/left.svg" alt="">
-        <img class="right-btn" src="images/right.svg">
-        <div class="hero-banner">
+        <!-- Navigation Header -->
+        <nav class="navbar">
+            <div class="logo">CINESTREAM</div>
+            <ul class="nav-links">
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">Movies</a></li>
+                <li><a href="#">Series</a></li>
+                <li><a href="#">My List</a></li>
+            </ul>
+            <div class="nav-right">
+                <button class="search-btn">🔍</button>
+                <div class="profile">👤</div>
+            </div>
+        </nav>
 
+        <!-- Slider Navigation -->
+        <img class="left-btn" src="images/left.svg" alt="Previous">
+        <img class="right-btn" src="images/right.svg" alt="Next">
+
+        <div class="hero-banner">
+            <!-- Slide 1 - Inception -->
             <div class="slide slide1">
+                <div class="overlay"></div>
                 <div class="content">
-                    <h1>As Light Rain Falls Without Reason</h1>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur dolor laborum nesciunt corporis beatae ipsum.</p>
-                    <button class="btn1">See More</button>
+                    <div class="movie-meta">
+                        <span class="rating">★ 8.8</span>
+                        <span class="year">2010</span>
+                        <span class="genre">Sci-Fi • Thriller</span>
+                    </div>
+                    <h1>Inception</h1>
+                    <p>A thief who steals corporate secrets through dream-sharing technology is given the inverse task of planting an idea into the mind of a C.E.O. An mind-bending journey through layers of dreams.</p>
+                    <div class="movie-info">
+                        <span class="duration">2h 28m</span>
+                        <span class="quality">4K Ultra HD</span>
+                    </div>
+                    <div class="button-group">
+                        <button class="btn-play">▶ Play Now</button>
+                        <button class="btn-list">+ My List</button>
+                    </div>
                 </div>
             </div>
+
+            <!-- Slide 2 - The Dark Knight -->
             <div class="slide slide2">
+                <div class="overlay"></div>
                 <div class="content">
-                    <h1>To the Stars Shining in the Depths</h1>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur dolor laborum nesciunt corporis beatae ipsum.</p>
-                    <button class="btn2">See More</button>
+                    <div class="movie-meta">
+                        <span class="rating">★ 9.0</span>
+                        <span class="year">2008</span>
+                        <span class="genre">Action • Crime</span>
+                    </div>
+                    <h1>The Dark Knight</h1>
+                    <p>Batman raises the stakes in his war on crime with the help of Lt. Jim Gordon and DA Harvey Dent. But soon they find themselves prey to a reign of chaos unleashed by the Joker.</p>
+                    <div class="movie-info">
+                        <span class="duration">2h 32m</span>
+                        <span class="quality">4K Ultra HD</span>
+                    </div>
+                    <div class="button-group">
+                        <button class="btn-play">▶ Play Now</button>
+                        <button class="btn-list">+ My List</button>
+                    </div>
                 </div>
             </div>
+
+            <!-- Slide 3 - Interstellar -->
             <div class="slide slide3">
+                <div class="overlay"></div>
                 <div class="content">
-                    <h1>Masquerade of the Guilty</h1>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur dolor laborum nesciunt corporis beatae ipsum.</p>
-                    <button class="btn3">See More</button>
+                    <div class="movie-meta">
+                        <span class="rating">★ 8.6</span>
+                        <span class="year">2014</span>
+                        <span class="genre">Sci-Fi • Adventure</span>
+                    </div>
+                    <h1>Interstellar</h1>
+                    <p>A team of explorers travel through a wormhole in space in an attempt to ensure humanity's survival. A epic journey across the stars to save the human race from extinction.</p>
+                    <div class="movie-info">
+                        <span class="duration">2h 49m</span>
+                        <span class="quality">4K Ultra HD</span>
+                    </div>
+                    <div class="button-group">
+                        <button class="btn-play">▶ Play Now</button>
+                        <button class="btn-list">+ My List</button>
+                    </div>
                 </div>
             </div>
+
+            <!-- Slide 4 - The Matrix -->
             <div class="slide slide4">
+                <div class="overlay"></div>
                 <div class="content">
-                    <h1>Vibrant Harriers Aloft in Spring Breeze</h1>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur dolor laborum nesciunt corporis beatae ipsum.</p>
-                    <button class="btn4">See More</button>
+                    <div class="movie-meta">
+                        <span class="rating">★ 8.7</span>
+                        <span class="year">1999</span>
+                        <span class="genre">Sci-Fi • Action</span>
+                    </div>
+                    <h1>The Matrix</h1>
+                    <p>A computer hacker learns about the true nature of reality and his role in the war against its controllers. The groundbreaking film that changed cinema forever.</p>
+                    <div class="movie-info">
+                        <span class="duration">2h 16m</span>
+                        <span class="quality">4K Ultra HD</span>
+                    </div>
+                    <div class="button-group">
+                        <button class="btn-play">▶ Play Now</button>
+                        <button class="btn-list">+ My List</button>
+                    </div>
                 </div>
             </div>
         </div>
+
+        <!-- Trending Section -->
+        <section class="trending">
+            <h2>Trending Now</h2>
+            <div class="movie-row">
+                <div class="movie-card">
+                    <div class="card-rating">★ 8.5</div>
+                    <div class="card-title">Dune</div>
+                </div>
+                <div class="movie-card">
+                    <div class="card-rating">★ 8.2</div>
+                    <div class="card-title">Avatar</div>
+                </div>
+                <div class="movie-card">
+                    <div class="card-rating">★ 8.9</div>
+                    <div class="card-title">Pulp Fiction</div>
+                </div>
+                <div class="movie-card">
+                    <div class="card-rating">★ 8.4</div>
+                    <div class="card-title">Fight Club</div>
+                </div>
+                <div class="movie-card">
+                    <div class="card-rating">★ 8.7</div>
+                    <div class="card-title">Forrest Gump</div>
+                </div>
+            </div>
+        </section>
     </div>
 
     <script src="script.js"></script>
